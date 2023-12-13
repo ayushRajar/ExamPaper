@@ -1,4 +1,5 @@
 import csv
+import writingToFile
 print("WELCOME TO QUESTION PAPER GENERATOR: ")
 if(__name__=="__main__"):
     n=int(input("ENTER THE NUMBER OF QUESTION: "))
@@ -20,6 +21,17 @@ if(__name__=="__main__"):
                 csvwriter.writerow(l)
 
     csvfile.close()
+
+    print("PREPARING YOUR QUESTION PAPER: ")
+    with open("Question.Csv" ,"r") as csvfile:
+        csvreader=csv.reader(csvfile)
+        data_item=[]
+        for data in csvreader:
+            data_item.append(data)
+    csvfile.close()
+
+    print(data_item)
+ 
 
 
 
