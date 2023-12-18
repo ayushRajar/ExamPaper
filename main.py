@@ -5,7 +5,7 @@ wb=openpyxl.load_workbook(filename="Q2.xlsx")
 sheet= wb.active
 
 
-"""print("WELCOME TO QUESTION PAPER GENERATOR: ")
+print("WELCOME TO QUESTION PAPER GENERATOR: ")
 
 if(__name__=="__main__"):
     course = input("ENTER THE COURSE NAME: ")
